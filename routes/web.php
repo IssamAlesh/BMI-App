@@ -22,4 +22,6 @@ Route::get('/views/start', [App\Http\Controllers\StartController::class, 'index'
 Route::get('/adultPeople',[\App\Http\Controllers\adultPeopleController::class,'index'])->name('views.adultPeople');
 Route::get('/kids',[\App\Http\Controllers\KidsController::class,'index'])->name('views.kids');
 Route::post('/adultPeople/check', [\App\Http\Controllers\adultPeopleController::class,'check'])->name('adultPeople.check');
+Route::post('/api/adultPeople/check', [\App\Http\Controllers\adultPeopleController::class,'checkApi']);
+
 
